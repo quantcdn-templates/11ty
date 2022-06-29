@@ -1,0 +1,17 @@
+{
+  "baseURL": "",
+  "author": "QuantCDN",
+  "description": "Startkit for 11ty and Quant",
+  "title": "Quant1ty",
+  "language": "en",
+  "social": [
+    {
+      "title": "Twitter",
+      "url": "https://twitter.com/#"
+    },
+    {
+      "title": "LinkedIn",
+      "url": "https://linkedin.com/company/#"
+    }
+  ]
+}
