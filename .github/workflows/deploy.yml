@@ -31,15 +31,15 @@ jobs:
         if: steps.cache-node-modules.outputs.cache-hit != 'true'
         run: npm install
 
-      - name: Build docs
+      - name: Build static output
         run: npm run build
 
       - name: Deploy updates to QuantCDN
         uses: quantcdn/deploy-action@v1.3.1
         with:
-          customer: "${{ env.QUANT_CUSTOMER }}"
-          project: "${{ env.QUANT_PROJECT }}"
-          token: "${{ env.QUANT_TOKEN }}"
+          customer: ${{ secrets.QUANT_CUSTOMER_ID }}
+          project: ${{ secrets.QUANT_PROJECT_ID }}
+          token: ${{ secrets.QUANT_TOKEN }}
           dir: public
           chunk-size: 20
           skip-purge: true
@@ -47,7 +47,7 @@ jobs:
       - name: Purge the QuantCDN cache
         uses: quantcdn/purge-action@v1.2.0
         with:
-          customer: "${{ env.QUANT_CUSTOMER }}"
-          project: "${{ env.QUANT_PROJECT }}"
-          token: "${{ env.QUANT_TOKEN }}"
+          customer: ${{ secrets.QUANT_CUSTOMER_ID }}
+          project: ${{ secrets.QUANT_PROJECT_ID }}
+          token: ${{ secrets.QUANT_TOKEN }}
           url_pattern: "/*"
