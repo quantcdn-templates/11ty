@@ -1,16 +1,29 @@
 const markdownIt = require('markdown-it')
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
+const { DateTime } = require("luxon")
 
 module.exports = (eleventyConfig) => {
-
-  let markdownOptions = {
+  const md = new markdownIt({
     html: true,
     breaks: true,
     linkify: true,
-  }
+  })
 
-  eleventyConfig.setLibrary('md', markdownIt(markdownOptions))
+  eleventyConfig.setLibrary('md', md)
   eleventyConfig.addPlugin(syntaxHighlight);
+
+  eleventyConfig.addFilter("postDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+  });
+
+  eleventyConfig.addFilter("markdown", (content) => {
+    return md.render(content);
+  });
+
+  eleventyConfig.addFilter("debug", (obj) => {
+    console.log(obj);
+    return JSON.stringify(obj)
+  });
 
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,
