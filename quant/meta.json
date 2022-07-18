@@ -1,0 +1,9 @@
+[{
+    "title": "Eleventy",
+    "url": "/deploy/step-one?template=11ty",
+    "summary": "Eleventy was created to be a JavaScript alternative to Jekyll. This starter kit uses Tailwind CSS for a rapid start building beautiful sites.",
+    "content": "It's zero-config by default but has flexible configuration options. Eleventy works with your project's existing directory structure. Eleventy works with multiple template languages. You can pick one or use them all together in a single project: HTML html Markdown md JavaScript 11ty.js Liquid liquid Nunjucks njk Handlebars hbs Mustache mustache EJS ejs Haml haml Pug pug Custom",
+    "image": "https://raw.githubusercontent.com/quantcdn-templates/11ty/main/quant/screenshot.png",
+    "categories": ["SSG"],
+    "tags": ["Markdown", "Nunjucks", "Liquid", "Handlebars", "Mustache", "EJS", "Haml", "Pug", "Tailwind CSS"]
+}]

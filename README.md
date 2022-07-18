@@ -1,5 +1,7 @@
 # 11ty QuantCDN starter template
 
+![Template screenshot](quant/screenshot.png?raw=true)
+
 This template provides everything you need to get started with [11ty](https://www.11ty.dev/) on QuantCDN.
 
 Click the "Deploy to Quant" button to create a new repo, QuantCDN project, and deployment pipelines.
