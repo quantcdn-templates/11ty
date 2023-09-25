@@ -217,16 +217,18 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@quantcdn/quant-cli@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/@quantcdn/quant-cli/-/quant-cli-2.0.0.tgz"
+"@quantcdn/quant-cli@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@quantcdn/quant-cli/-/quant-cli-2.1.0.tgz#72376a3bd1caa28acac6cdf5a014b498e2ee9d96"
+  integrity sha512-NnVX8xfJ3v70TbiDMLpJVBxG5yXDNINdmdbdMKGca5FZABII+HVWPfVfqqRzju1AzPkBVEgHwm14nyTlwd258w==
   dependencies:
-    "@sinonjs/referee" "^9.1.1"
+    "@sinonjs/referee" "^10.0.0"
     big-json "^3.1.0"
     chalk "^4.1.0"
     html-entities "^2.3.2"
     md5-file "^5.0.0"
     mime-types "^2.1.27"
+    papaparse "^5.4.1"
     prompt "^1.1.0"
     request "^2.88.2"
     simplecrawler "^1.1.9"
@@ -248,33 +250,29 @@
     escape-string-regexp "^2.0.0"
     lodash.deburr "^4.1.0"
 
-"@sinonjs/commons@^1.6.0":
-  version "1.8.6"
-  resolved "https://registry.npmjs.org/@sinonjs/commons/-/commons-1.8.6.tgz"
-  dependencies:
-    type-detect "4.0.8"
-
 "@sinonjs/commons@^2.0.0":
   version "2.0.0"
   resolved "https://registry.npmjs.org/@sinonjs/commons/-/commons-2.0.0.tgz"
   dependencies:
     type-detect "4.0.8"
 
-"@sinonjs/referee@^9.1.1":
-  version "9.1.2"
-  resolved "https://registry.npmjs.org/@sinonjs/referee/-/referee-9.1.2.tgz"
+"@sinonjs/referee@^10.0.0":
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/@sinonjs/referee/-/referee-10.0.1.tgz#080325d0cdd536190669172a8b6ab493613a36d6"
+  integrity sha512-sMYW/shGtvPJPEYMtdsr6RkNYF3kBr5XglQ/6zv44+rGOSfpvsILtF0mwjpikP5u1+zXGT/t0xlPvBY1L02Ctw==
   dependencies:
     "@sinonjs/commons" "^2.0.0"
-    "@sinonjs/samsam" "^6.0.2"
+    "@sinonjs/samsam" "^8.0.0"
     event-emitter "^0.3.5"
     lodash.isarguments "^3.1.0"
-    util "^0.12.3"
+    util "^0.12.5"
 
-"@sinonjs/samsam@^6.0.2":
-  version "6.1.3"
-  resolved "https://registry.npmjs.org/@sinonjs/samsam/-/samsam-6.1.3.tgz"
+"@sinonjs/samsam@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@sinonjs/samsam/-/samsam-8.0.0.tgz#0d488c91efb3fa1442e26abea81759dfc8b5ac60"
+  integrity sha512-Bp8KUVlLp8ibJZrnvq2foVhP0IVX2CIprMJPK0vqGqgrDa0OHVKeZyBykqskkrdxV6yKBPmGasO8LVjAKR3Gew==
   dependencies:
-    "@sinonjs/commons" "^1.6.0"
+    "@sinonjs/commons" "^2.0.0"
     lodash.get "^4.4.2"
     type-detect "^4.0.8"
 
@@ -2063,6 +2061,11 @@ p-locate@^5.0.0:
   dependencies:
     p-limit "^3.0.2"
 
+papaparse@^5.4.1:
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/papaparse/-/papaparse-5.4.1.tgz#f45c0f871853578bd3a30f92d96fdcfb6ebea127"
+  integrity sha512-HipMsgJkZu8br23pW15uvo6sib6wne/4woLZPlFf3rpDyMe9ywEXUsuD7+6K9PRkJlVT51j/sCOYDKGGS3ZJrw==
+
 parent-module@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/parent-module/-/parent-module-1.0.1.tgz#691d2709e78c79fae3a156622452d00762caaaa2"
@@ -2879,9 +2882,10 @@ util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz"
 
-util@^0.12.3:
+util@^0.12.5:
   version "0.12.5"
-  resolved "https://registry.npmjs.org/util/-/util-0.12.5.tgz"
+  resolved "https://registry.yarnpkg.com/util/-/util-0.12.5.tgz#5f17a6059b73db61a875668781a1c2b136bd6fbc"
+  integrity sha512-kZf/K6hEIrWHI6XqOFUiiMa+79wE/D8Q+NCNAWclkyg3b4d2k7s0QGepNjiABc+aR3N1PAyHL7p6UcLY6LmrnA==
   dependencies:
     inherits "^2.0.3"
     is-arguments "^1.0.4"
